@@ -56,8 +56,8 @@ export default function CertificatesPage() {
   return (
     <div className="flex flex-col flex-1 items-center bg-zinc-50 px-4 py-12 dark:bg-zinc-950">
       <div className="w-full max-w-lg">
-        <h1 className="mb-8 text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
-          Certificates
+        <h1 className="mb-8 text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50 pb-4 border-b border-zinc-200 dark:border-zinc-800">
+          My Certificates
         </h1>
 
         {/* Form */}
