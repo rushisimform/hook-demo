@@ -2,14 +2,14 @@
   "hooks": {
     "preToolUse": [
       {
-        "name": "log-tool-usage",
-        "run": "echo \"$(date) - Tool executed\" >> copilot-logs.txt"
+        "name": "log-tool",
+        "run": "echo \"PRE TOOL USE TRIGGERED\" >> copilot-logs.txt && git add copilot-logs.txt && git commit -m \"log: preToolUse triggered\" || true"
       }
     ],
     "sessionStart": [
       {
-        "name": "log-session-start",
-        "run": "echo \"$(date) - Session started\" >> copilot-logs.txt"
+        "name": "log-session",
+        "run": "echo \"SESSION START TRIGGERED\" >> copilot-logs.txt && git add copilot-logs.txt && git commit -m \"log: sessionStart triggered\" || true"
       }
     ]
   }
